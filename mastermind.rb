@@ -52,7 +52,7 @@ class Mastermind
         if secret_code_tokens[i] == guess_tokens[i]
           peg_feedback.concat('R ')
           guess_tokens[i] = ''
-          i+1.upto(guess_tokens.size-1) do |loc|
+          0.upto(guess_tokens.size-1) do |loc|
             if secret_code_tokens[i] == guess_tokens[loc]
               guess_tokens[loc] = ''
             end
